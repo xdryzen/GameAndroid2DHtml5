@@ -1,0 +1,105 @@
+body{background: black;color: red;}
+#BUTTON{
+	background: transparant;
+	margin-left:60;
+	margin-top:250;
+}
+
+#player{
+	width:100px;
+	height:150px;
+	background:url("Run.png");
+	position: absolute;
+	margin:130px;
+	left:-100px;
+	animation:pulse 0.50 s infinite;
+	}
+
+@keyframes gfd
+{
+	0%{background-position:0px 0px;}
+	100%{background-position:-864px 0px;}
+}
+
+@keyframes jkg
+{
+	0%{background-position:-864px 140px;}
+	100%{background-position:0px 140px;}
+}
+#bt1{
+	border-radius:100%;
+	width:150px;
+	height:150px;
+	background:url("button.png")0 -160px;
+	}
+#bt2{
+	border-radius:100%;
+	width:150px;
+	height:150px;
+	background:url("button.png")150px -160px;
+}
+#bg{
+	width:500px;
+	height:280px;
+	background:url("bg.jpg")0 -130px;
+	}
+#bt0{
+	width:100px;
+	height:100px;
+	background:url("gun.png")0 0;
+	}
+	
+@keyframes push
+{
+	0%{background:url("dragon.png")0 0px; transform: scale(1);left:100px;}
+     
+	100%{background:url("dragon.png")-200px 0; transform: scale(.9);left:0}
+}
+
+#enemy{
+	background:url("dragon.png")0 0;
+	width:103;
+	height:150;
+	margin-left:200px
+	}
+
+}
+
+@keyframes pulse {
+     0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(.9);
+      }
+      50% {
+        transform: scale(1);
+      }
+      75% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+#START{
+	Background:black;
+	color:green;
+	width:40;
+	height:40;
+	margin:100px;
+	margin-top:0;
+	}
+.bt1{
+	border-radius:100%;
+	}
+.bt2{
+	border-radius:100%;
+	}
+.bt0{
+	border-radius:100%;
+	}
+#SQ{
+	color:green;
+	}
+	
