@@ -12,7 +12,6 @@ body{background: black;color: red;}
 	position: absolute;
 	margin:130px;
 	left:-100px;
-	animation:pulse 0.50 s infinite;
 	}
 
 @keyframes gfd
@@ -60,30 +59,31 @@ body{background: black;color: red;}
 	background:url("dragon.png")0 0;
 	width:103;
 	height:150;
+	position: absolute;
 	margin-left:200px
 	}
 
 }
 
-@keyframes pulse {
+@keyframes peong {
      0% {
-        transform: scale(1);
+        background:red;
       }
       25% {
-        transform: scale(.9);
+        background: transparant;
       }
       50% {
-        transform: scale(1);
+        background:red;
       }
       75% {
-        transform: scale(1.1);
+        background: transparant;
       }
       100% {
-        transform: scale(1);
+        background: red;
       }
 }
 #START{
-	Background:black;
+	background:black;
 	color:green;
 	width:40;
 	height:40;
@@ -102,4 +102,39 @@ body{background: black;color: red;}
 #SQ{
 	color:green;
 	}
+/*
+#ammo{
+	position: absolute;
+	width:400px;
+	height:10px;
+	background:blue;
+	}
+*/
+
+#health-point{
+background:red;
+height:10px;
+position: absolute;
+}
+
+
+#health-enemy{
+background: green;
+height:10px;
+position: absolute;
+}
+
+#gun{
+	width:10px;
+	height:100px;
+	position: absolute;
+	animation:peong 1s infinite;
+}
+#win{
+	margin:90px;
+	position:absolute;
+	left:97px;
+	}
+
+
 	

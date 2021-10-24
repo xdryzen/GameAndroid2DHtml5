@@ -1,0 +1,46 @@
+<! Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!--meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=no;"-->
+		<title>game</title>
+		<link rel="stylesheet" href="mechanize.css"/>
+	</head>
+	<body>
+		<div id="bg">
+			<div id="posisi"></div>
+			<div id="player"><div id="health-point"></div><div id="gun"></div></div>
+			<div id="enemy"><div id="health-enemy"></div></div>
+        </div>
+        <table id="BUTTON">
+        	<tr>
+            <td><button class="bt0" onclick="gun()"><div id="bt0"></div></button></td><td><butto id="SQ" onclick="qwa()">Play MUSIC SQUID GAME </button></td></tr>
+<tr>
+        	<td><button class="bt1"  onclick="kiri()"><div id="bt1"></div></button></td><td><button class="bt2" onclick="kanan()"><div id="bt2"></div></button></td></tr>
+        <script src="game.js"></script>
+        <script>
+        	var x = document.getElementById("health-point");
+            var z = document.getElementById("health-enemy");
+            let gon = 100;
+            let gin = 100;
+            z.style.width=gin+"px";
+            x.style.width=gin+"px";
+            function push(){
+	          z.style.width=gon+"px";
+	          gon-=10;
+	          z.innerHTML=gon;
+	          if(gon <= 0){
+		         enemy.style.top="-400px"
+		         bg.innerHTML="<center><div id='win'><h1>YOU WIN 👑</h1></div></center>";
+		         bg.style.fontSize="400 px";
+		         bg.style.color="yellow";
+		         hore();
+		       // enemy.innerHTML="YOU WIN";
+		      //  enemy.style.fontSize="40px";
+		     //   enemy.style.color="yellow";
+		     //   alert("game over");
+		         }
+             }
+        </script>
+    </body>
+</html>
